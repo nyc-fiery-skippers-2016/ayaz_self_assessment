@@ -1,0 +1,6 @@
+<form action="/users/<%= @user.id %>/channels" method="post">
+	<input type="text" name="channel[name]" placeholder="channel name">
+	<input type="text" name="channel[callsign]" placeholder="callsign">
+	<input type="number" name="channel[price_per_month]" placeholder="cost">
+	<input type="submit" value="Create Channel">
+</form>

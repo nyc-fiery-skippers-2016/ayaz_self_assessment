@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="stylesheet" href="/css/normalize.css?app=skills">
+  <link rel="stylesheet" href="/css/application.css?app=skills">
+
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+  <script src="/js/application.js?app=skills"></script>
+
+  <title></title>
+</head>
+<body>
+	<% if logged_in? %>
+		<a href="/logout">Log Out</a>
+	<% else %>
+		<a href="/login">Log in</a>
+		<a href="/users/new">Register</a>
+	<% end %>
+
+  <%= yield %>
+</body>
+</html>
