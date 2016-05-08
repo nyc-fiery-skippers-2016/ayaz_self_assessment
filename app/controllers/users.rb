@@ -2,13 +2,14 @@
 get '/users/:user_id/channels' do 
 
   @user = User.find(params[:user_id])
-
   @channels = @user.channels
-  if logged_in?
+  # binding.pry
+  # @total_cost = total_cost(@channels)
+  # if logged_in?
     erb :'channels/user_channels_index'
-  else
-    halt 403
-  end
+  # else
+    # halt 403
+  # end
 
 end
 #-----------------------------------------------

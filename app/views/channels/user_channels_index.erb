@@ -2,6 +2,6 @@
 
 <% @channels.each do |channel| %>
 	<ul>
-		<li><a href="/channels/#{channel.id}"><%= channel.name %></a></li>
+		<li><a href="/channels/<%= channel.id %>"><%= channel.name %></a></li>
 	<ul>
 <% end %>
